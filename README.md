@@ -13,4 +13,5 @@ input.param contains the user defined parameters for the TuTraSt analysis and kM
 For questions on technical issues, usage, maintenance and development please contact Amber Mace (amber.mace@epfl.ch). We are also happy discuss any ideas new applications or potential areas of development, so free to contact us for any related matters. 
 
 Please cite!
-[1] Amber Mace, Senja Barthel and Bernd Smit, J. Chem. Theory Comput. 2019,  15, 4, 2127-2141
+
+[1] Amber Mace, Senja Barthel and Berend Smit, J. Chem. Theory Comput. 2019,  15, 4, 2127-2141
