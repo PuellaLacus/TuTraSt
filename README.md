@@ -8,9 +8,9 @@ TuTraSt_main.m executes the analysis reading grid.cube and input.param as input.
 
 grid.cube is a the potential energy grid file in cube-format. Please check that the formatting of your file matches the example file given. 
 
-input.param contains the user defined parameters for the TuTraSt analysis and kMC simualtions. The ordering in this file must be as defined. 
+input.param contains the user defined parameters for the TuTraSt analysis and kMC simualtions. The ordering in this file cannot be changed. 
 
-For questions on technical issues, usage, maintenance and development please contact Amber Mace (amber.mace@epfl.ch). We are also happy discuss any ideas new applications or potential areas of development, so free to contact us for any related matters. 
+For questions on technical issues, usage, maintenance and development please contact Amber Mace (amber.mace@epfl.ch). We are also happy discuss any ideas on new applications or potential areas of development, so feel free to contact us for any related matters. 
 
 Please cite!
 
