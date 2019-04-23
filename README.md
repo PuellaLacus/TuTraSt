@@ -1,6 +1,6 @@
 # TuTraSt
 
-Matlab code for TuTraST analysis as presented in [1]. 
+Matlab code for TuTraSt analysis as presented in [1]. 
 
 TuTraSt is a novel algorithm to predict self-diffusion of a mobile guest particle in a crystalline material. It detects the energies at which diffusion paths are formed, allowing for easy identification of diffusive systems, and furthermore partitions the potential energy field into energy basins and transitions states. This TUnnel and TRAnsition STate search algorithm permits a transition state theory based analysis for fast prediction of the diffusion coefficients with an automated multiscale modeling approach.
 
