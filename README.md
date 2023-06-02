@@ -10,7 +10,7 @@ grid.cube is a the potential energy grid file in cube-format. Please check that 
 
 input.param contains the user defined parameters for the TuTraSt analysis and kMC simualtions. The ordering in this file cannot be changed. 
 
-For questions on technical issues, usage, maintenance and development please contact Amber Mace (amber.mace@epfl.ch). We are also happy discuss any ideas on new applications or potential areas of development, so feel free to contact us for any related matters. 
+For questions on technical issues, usage, maintenance and development please contact Amber Mace (amber.mace@kemi.uu.se). We are also happy discuss any ideas on new applications or potential areas of development, so feel free to contact us for any related matters. 
 
 Please cite!
 
