@@ -15,3 +15,4 @@ For questions on technical issues, usage, maintenance and development please con
 Please cite!
 
 [1] Amber Mace, Senja Barthel and Berend Smit, J. Chem. Theory Comput. 2019,  15, 4, 2127-2141
+The Github entry has the DOI: https://doi.org/10.5281/zenodo.2586985
