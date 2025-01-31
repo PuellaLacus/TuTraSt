@@ -1,4 +1,4 @@
-function [cross_vector,coord_list]=get_TS_cross_vector(start_min,end_min,coord_list,grid,C1,C2,iTunnel,idTSG)
+function [cross_vector,coord_list]=get_TS_cross_vector(start_min,end_min,coord_list,grid,C1,C2)
 if C1==C2
     disp('Tunnel has only one cluster')
     cross_vector=[0 0 0]; %%%Should this not be direction of tunnel?
@@ -59,10 +59,10 @@ if C1==C2
         end
         if endmin_found==1
             disp('End point is found!')
-            disp([C1 C2 iTunnel idTSG cross_diff])
+            disp([C1 C2 cross_diff])
             break
         elseif index_pos==length(index_list)
-            disp([C1 C2 iTunnel idTSG])
+            disp([C1 C2])
             disp('End point was not found!!!!!!!!!!!!')
             break
         else
@@ -72,7 +72,7 @@ if C1==C2
     
 else
     cross_vector=[0 0 0];
-    length_list=length(coord_list);
+length_list=length(coord_list(:,1));
     coord_list=[coord_list zeros(length_list,4)];
     start_pos=find(start_min(1)==coord_list(:,1) & start_min(2)==coord_list(:,2) & start_min(3)==coord_list(:,3),1);
     index_list=start_pos;
@@ -129,11 +129,11 @@ else
         end
         if endmin_found==1
             disp('End point was found!')
-            disp([C1 C2 iTunnel idTSG])
+            disp([C1 C2])
             break
         elseif index_pos==length(index_list)
             disp('End point was not found!!!!!!!!!!!!')
-            disp([C1 C2 iTunnel idTSG])
+            disp([C1 C2])
             break
         else
             index_pos=index_pos+1;

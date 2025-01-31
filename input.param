@@ -1,12 +1,13 @@
-2			%Energy unit of grid. Options are: 1=kJ/mol, 2=kcal/mol, 3=Ry, 4=eV, 5=Hartee.
-500			%Temperature in K
+1			%Energy unit of grid. Options are: 1=kJ/mol, 2=kcal/mol, 3=Ry, 4=eV, 5=Hartee.
+1 			%number of temps
+1000
 1			%Run kMC? 0=no, 1=yes
-1			%Plot MSD? 0=no, 1=yes. Only works if running with matlab gui. 
-100000      %Number of kMC steps to run.
+0			%Plot MSD? 0=no, 1=yes. Only works if running with matlab gui. 
+250000      		%Number of kMC steps to run.
 100			%Print trajectory every n steps.
 10			%Number of kMC simulations to run for averaging.
 1			%number of particles for kMC.
-1           %number of particles given: 0=in total, 1=per tunnel.
-16.04e-3    %particle mass
-0.1			%Energy step in kJ/mol
-60			%Energy cutoff on kJ/mol
+1	          	%number of particles given: 0=in total, 1=per tunnel.
+6.941e-3     		%particle mass
+2			%Energy step in kJ/mol
+100			%Energy cutoff on kJ/mol

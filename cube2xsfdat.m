@@ -1,6 +1,6 @@
 function [grid,grid_size,pot_data]=cube2xsfdat(E_unit)
 disp('writing pot data...')
-cube=importdata('grid.cube');
+cube=importdata(strcat('grid.cube'));
 Natoms=cube.data(1,1);
 if E_unit==1 %kJ/mol
     conv2kJmol=1;
@@ -18,23 +18,15 @@ a_grid=sqrt(cube.data(2,2)^2+cube.data(2,3)^2+cube.data(2,4)^2)*0.529177249;
 b_grid=sqrt(cube.data(3,2)^2+cube.data(3,3)^2+cube.data(3,4)^2)*0.529177249;
 c_grid=sqrt(cube.data(4,2)^2+cube.data(4,3)^2+cube.data(4,4)^2)*0.529177249;
 grid_size=[a_grid b_grid c_grid]; %grid size in Angstrom
-cube_data=cube.data(2*Natoms+5:end,:);
+cube_data=cube.data(6:end,1);
 shift_cube_data=(cube_data-min(min(cube_data)))*conv2kJmol;
 cube_size=size(cube_data);
 line=0;
-for row=1:cube_size(1)
-    for column=1:cube_size(2)
-        if shift_cube_data(row,column)>=0
-            line=line+1;
-            data(line)=shift_cube_data(row,column);
-        end
-    end
-end
 line=1;
 for a=1:grid(1)
     for b=1:grid(2)
         for c=1:grid(3)
-            data_mat(a,b,c)=data(line);
+            data_mat(a,b,c)=shift_cube_data(line,1);
             line=line+1;
         end
     end
